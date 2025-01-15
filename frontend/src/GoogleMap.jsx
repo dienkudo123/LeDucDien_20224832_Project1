@@ -175,8 +175,9 @@ const GoogleMap = () => {
             {/* Bản đồ */}
             <div ref={mapRef} style={{width: "100%", height: "600px"}} className="mt-5 mb-5"/>
 
+            {selectedEnd.name !== selectedStart.name &&
             <a className="ml-10 mb-5 bg-white border border-black py-5 px-5">Đường Đi
-                từ {selectedStart.name} đến {selectedEnd.name}: {output.distance / 1000} km</a>
+                từ {selectedStart.name} đến {selectedEnd.name}: {output.distance / 1000} km</a>}
         </div>
     );
 };
